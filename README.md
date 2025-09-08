@@ -12,6 +12,7 @@ It demonstrates preprocessing, TF-IDF feature extraction, and classification, an
 - Evaluation metrics: Accuracy, Precision, Recall, Specificity, F1-score, ROC-AUC
 - Confusion matrix & ROC curve plots
 - Results export as CSV & Markdown (ready for research papers)
+- **Optimized Training**: Faster runtime with dataset sampling and reduced grid search space
 
 ---
 
@@ -63,7 +64,7 @@ pip install -r requirements.txt
 
 ### Train Logistic Regression
 ```bash
-python src/train_lr_twitter.py --data-path "data/training.1600000.processed.noemoticon.csv" --sample-size 100000 --test-sizes "0.1,0.2,0.3" --max-features 8000 --ngram-max 2 --penalty l2 --C 1.0 --solver liblinear --out-dir results
+python src/train_lr_twitter.py --data-path "data/training.1600000.processed.noemoticon.csv" --sample-size 50000 --test-sizes "0.1,0.2,0.3" --max-features 10000 --ngram-max 2 --penalty l2 --C 1.0 --solver liblinear --out-dir results
 ```
 
 👉 Parameters:

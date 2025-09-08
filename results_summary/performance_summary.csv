@@ -1,0 +1,9 @@
+Metric,Value
+Model,Logistic Regression
+Validation_acc,78.87%
+Test_acc,78.88%
+Precision,78.92%
+Recall,78.88%
+F1_score,78.87%
+AUC,87.05%
+Training_time,00m 34s
